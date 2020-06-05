@@ -1,0 +1,27 @@
+body{
+	background-image: url('seizure.gif');
+}
+.centre{
+	text-align: center;
+}
+#butto{
+	text-align: center;
+}
+a{
+	cursor:text;
+}
+a:link, a:visited{
+	text-decoration:none;
+	color:black;
+}
+.grow {
+	position: relative;
+	font-size: 130%;
+	animation:
+	change 3s steps(1000, end);
+}
+
+@keyframes change {
+  from { font-size: 0% }
+  to { font-size: 130%; }
+}

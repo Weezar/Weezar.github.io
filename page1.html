@@ -1,0 +1,45 @@
+<html>
+<link rel="stylesheet" href="style2.css">
+    <head>
+        <script>
+		var compteur = 0;
+		
+		function coms() {
+			compteur++;
+			if (compteur === 1) {
+				document.querySelector('#txt').innerHTML = "Vous ne pouvez plus sortir";
+			}
+			if (compteur === 2) {
+				document.querySelector('#txt2').innerHTML = "Arretez d'essayer";
+			}
+			if (compteur === 3) {
+				document.querySelector('#txt3').innerHTML = "C'est trop tard";
+			}
+			if (compteur === 4) {
+				document.querySelector('#txt4').innerHTML = "Vous ne pouvez pas revenir en arriere";
+			}
+			if (compteur === 5) {
+				document.querySelector('#txt5').innerHTML = 'ARRETEZ!';
+			}
+			if (compteur === 6) {
+				document.querySelector('#txt6').innerHTML = "--> Ok, cliquez ici pour revenir en arriere <--";
+			}
+		}
+        </script>
+        <title>Ta page web</title>
+    </head>
+    <body>
+		<h1 class='centre + grow'> Je vous ai prevenu de ne pas appuyer!</h1>
+		<div id='butto'>
+		<button class='grow' onclick='coms()'>N'appuyez pas sur ce boutton pour revenir en arriere</button>
+		</div>
+		<p class='centre' id='txt'></p>
+		<p class='centre' id='txt2'></p>
+		<p class='centre' id='txt3'></p>
+		<p class='centre' id='txt4'></p>
+		<p class='centre' id='txt5'></p>
+		<a href='index.html' class='rise'>
+		<p class='centre' id='txt6'></p>
+		</a>
+    </body>
+</html>

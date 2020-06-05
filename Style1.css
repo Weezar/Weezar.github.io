@@ -1,0 +1,40 @@
+
+.centre{
+	text-align: center;
+}
+#butto{
+	text-align: center;
+}
+table th, td{
+	border: 1px solid black;
+}
+body{
+	background-image: url('Bakc.png');
+}
+
+.typewriter h1 {
+  font-family: monospace; /* Web-safe typewriter-like font */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid transparent; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  font-size: 400%;
+  animation: 
+    typing 4.8s steps(50, end),
+    blinking-cursor .5s step-end 10;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blinking-cursor {
+  from, to { border-color: orange }
+  50% { border-color: transparent; }
+}
+	
+
